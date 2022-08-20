@@ -1,0 +1,10 @@
+div {
+    border: solid blue;
+    margin: 5px;
+    padding: 2px;
+}
+
+section {
+    border: solid red;
+    margin: 5px;
+}
