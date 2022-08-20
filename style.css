@@ -1,10 +1,108 @@
-div {
-    border: solid blue;
-    margin: 5px;
-    padding: 2px;
+body {
+    display: grid;
+    grid-template-columns: 200px 800px 1fr;
+    grid-template-rows: 150px 300px 300px;
+    gap: 15px;
+    margin: 20px;
+    background-color: #9ca3af;
 }
 
-section {
-    border: solid red;
-    margin: 5px;
+header {
+    grid-area: 1/2/1/4;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 50px 70px;
+    background-color: snow;
+    padding: 10px;
+}
+
+.top-nav {
+    grid-area: 1/1/1/6;
+}
+
+.bottom-nav {
+    grid-area: 2/1/2/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.bottom-nav nav {
+    grid-area: 1/2/1/2;
+    /*display: grid;
+    grid-template-columns: 100px 100px 100px;*/
+}
+
+.bottom-nav nav li {
+    display: inline;
+    margin: 30px
+}
+
+.Sidebar-left {
+    grid-area: 1/1/5/1;
+    background-color: skyblue;
+}
+
+.hero {
+    grid-area: 2/2/5/3;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    padding: 10px;
+}
+
+.hero  .inner-super {
+    background-color: yellow;
+    padding: 10px;
+    /*grid-area: 1/1/1/1;*/
+}
+.hero .inner-less {
+    /*grid-area: 1/2/1/2;*/
+    background-color: red;
+    padding: 10px;
+}
+.hero .inner-impossible {
+    padding: 10px;
+    background-color: blue;
+}
+.hero .inner-easy {
+    padding: 10px;
+    background-color: green;
+}
+.hero .inner-ad {
+    padding: 10px;
+    background-color: purple;
+}
+.hero .inner-money {
+    padding: 10px;
+    background-color: grey;
+}
+
+.side-sec {
+    grid-area: 2/3/2/3;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 90px 100px 110px;
+    grid-template-columns: 1fr;
+    background-color: aliceblue;
+    padding: 10px;
+    
+}
+
+.trend {
+    margin-top: 80px;
+    grid-area: 3/3/3/3; 
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: aliceblue;
+    padding: 10px;
 }
